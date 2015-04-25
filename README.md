@@ -2,19 +2,24 @@
 Actino Inc - Installer Script (help you to setup database and generate configuration).
 Generated configuration will be at /class folder
 
+![page-break-lines screenshot](screenshot.png)
+
 ## Quick Guide
 You can change settings.xml to customized it.
 
 ### Example
 
 * Setup Page Title and Copyright
+```xml
     <title>ACTINO</title>
     <copyright>Actino Inc | Manage Strategic Change</copyright>
-	
+```	
 * Setup source sql data
+```xml
     <source>data.sql</source>
-	
-* System Requirements	
+```	
+* System Requirements
+```xml
     <requires>
         <version>5.1.2</version>
         <extension name="curl" />
@@ -25,8 +30,9 @@ You can change settings.xml to customized it.
         <extension name="zip" />
         <extension name="json" />
     </requires>
-	
-* Language	
+```		
+* Language
+```xml
     <languages>
         <default>en</default>
         <language id="en">
@@ -42,12 +48,13 @@ You can change settings.xml to customized it.
             </choose>
         </language>
     </languages>
-	
-* Database Settings		
+```		
+* Database Settings
+```xml
     <values>
         <host>localhost</host>
         <database></database>
         <username></username>
         <prefix></prefix>
     </values>
-
+```
